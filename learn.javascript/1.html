@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+<script> 
+
+var arrForCheck = [5, 4, 3, 8, 0];
+
+function filterRange(arr, a, b) {
+  var result = [];
+  for (i = 0; i < arr.length; i++) {
+    if (a <= arr[i] && arr[i] <= b) {
+      result.push(arr[i]);
+    }
+  }
+
+  return result;
+}
+
+var filtered = filterRange(arrForCheck, 3, 5);
+alert(filtered);
+// теперь filtered = [5, 4, 3]
+// arr не изменился
+
+</script>
+</body>
+
+</html>
